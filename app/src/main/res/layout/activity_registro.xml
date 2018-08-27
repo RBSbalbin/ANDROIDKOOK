@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registro">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="587dp"
+        android:layout_marginBottom="112dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="REGISTRO"
+            android:textColor="@android:color/holo_orange_light"
+            android:textColorLink="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/kooklogo" />
+
+        <EditText
+            android:id="@+id/txtNomUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:hint="Ingresar Nombre"
+            android:inputType="textPersonName"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtNomUsu" />
+
+        <EditText
+            android:id="@+id/txtDisUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresar Distrito"
+            android:inputType="textPersonName"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtDisUsu" />
+
+        <EditText
+            android:id="@+id/txtCorUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingresar Correo"
+            android:inputType="textPersonName"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtCorUsu" />
+
+        <EditText
+            android:id="@+id/txtPasUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtPasUsu" />
+
+        <Button
+            android:id="@+id/btnRegistrarUsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/holo_orange_light"
+            android:text="REGISTRARSE"
+            android:textSize="18sp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

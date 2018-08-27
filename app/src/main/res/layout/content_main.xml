@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="13dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="LOGIN"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="123dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/kooklogo" />
+
+        <EditText
+            android:id="@+id/txtUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Ingrese Correo"
+            android:inputType="textPersonName"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtUsuario"
+            tools:layout_marginTop="50dp" />
+
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:shadowColor="@android:color/holo_orange_light"
+            android:textColorLink="@android:color/holo_orange_light"
+            tools:id="txtPassword" />
+
+        <Button
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffbb33"
+            android:text="INGRESAR"
+            android:textSize="18sp"
+            tools:id="btnIngresar"
+            tools:layout_marginTop="30dp" />
+
+        <TextView
+            android:id="@+id/tvRegistrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="Registrese"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="24sp"
+            tools:id="tvRegistrese" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
